@@ -1,15 +1,87 @@
 /*CSS Demo Project*/
 /*
-#6ABF8C cyan
-#281616 dark maroon
-#7C1A53 vivid purple
-#E0A88C soft pink 
-#D7D396 sand
+#15152D navy
+#444E7F steel blue
+#8C98E2 pale blue
+#E8EFFF ice blue
+#7B212B maroon
 */
 
+/* --------Box Sizing-------- */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
 
+/* --------Global Styles-------- */
 body{
-    background-color:#281616;
-    font-family: "Mate", serif;
-    color:#D7D396;
+    background-color:#15152D;
+    font-family: 'Gelasio', serif;
+    color:#E8EFFF;
+    margin:0;
+}
+
+header.primary{
+    background-color:#8C98E2;
+    color:#444E7F;
+    text-align: center;
+    padding:20px;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;  
+     /* T,R,B,L */
+    padding: 20px 40px 20px 40px; 
+    /* Two Value Top/Bottom, L/R */
+    padding: 20px 40px;
+    /*-- Order matters, same syntax for margin --*/
+
+    /*text-shadow:1px 1px 10px #000000; 
+    X offset, Y offset, optional blur, color*/
+
+}
+
+header.primary h1{
+    font-size:2.6rem; /*can use px but em and rem scales*/
+    margin:20px;
+}
+
+header.primary h1 a{
+    color:#281616;
+    text-decoration:none;
+}
+
+header.primary h2{
+    font-size:1.4rem;
+}
+
+header.primary nav{
+    max-width:960px;
+    margin:auto;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:0; /*since we removed the bullets*/
+}
+
+header.primary nav ul li{
+    list-style-type:none; 
+}
+
+header.primary nav a{
+    color:#7B212B;
+    background-color:#E8EFFF;
+    background-color:rgba(232, 239, 255, 0.5);
+    text-decoration:none;
+    font-size: 1.2rem;
+    padding:8px 16px;
+    border-radius:8px;
 }
