@@ -1,10 +1,10 @@
 /*CSS Demo Project*/
 /*
-#15152D navy
-#444E7F steel blue
-#8C98E2 pale blue
-#E8EFFF ice blue
-#7B212B maroon
+#15152D (21, 21, 45) navy
+#444E7F (68, 78, 127) steel blue
+#8C98E2 (140, 152, 226) pale blue
+#E8EFFF (232, 239, 255) ice blue
+#7B212B (123, 33, 43) maroon
 */
 
 /* --------Box Sizing-------- */
@@ -15,6 +15,19 @@ html {
 *:before,
 *:after{
     box-sizing: inherit;
+}
+
+/* --------Utility Styles--------*/
+
+.container{ /*use . for class and # for id*/
+    width:80vw;
+    margin:40px auto;
+}
+
+/* --------Responsive Images--------*/
+/*Can be placed under Utility Styles*/
+img{
+    max-width:100%;
 }
 
 /* --------Global Styles-------- */
@@ -52,7 +65,7 @@ header.primary h1{
 }
 
 header.primary h1 a{
-    color:#281616;
+    color: white;
     text-decoration:none;
 }
 
@@ -77,11 +90,70 @@ header.primary nav ul li{
 }
 
 header.primary nav a{
-    color:#7B212B;
+    color:#15152D;
     background-color:#E8EFFF;
     background-color:rgba(232, 239, 255, 0.5);
     text-decoration:none;
     font-size: 1.2rem;
     padding:8px 16px;
     border-radius:8px;
+    transition:0.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active{
+    background-color:#7B212B;
+    color:#E8EFFF;
+}
+
+#intro{
+border-bottom: 1px solid #444E7F; 
+padding-bottom:14px;
+}
+
+#intro h2{
+    color:#8C98E2;
+    padding-bottom:8px;
+    border-bottom: 1px dotted #8C98E2;
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:20px;
+}
+
+#content article.post{
+    box-shadow:0 4px 8px rgba(232, 239, 255, 0.1);
+    padding:10px;
+    font-size:0.9rem;
+}
+
+#content article.post:hover{
+    box-shadow:0 4px 12px rgba(232, 239, 255, 0.3);
+}
+
+article.post figure{
+    margin:0;
+}
+
+
+
+/* --------Media Query-------- */ 
+/*This should always be at the bottom*/
+@media screen and (max-width:600px){
+    header.primary nav ul{
+        flex-direction:column;
+        max-width:250px;
+        margin:auto;
+    }
+
+    header.primary nav ul a{
+        display:block;
+    }
+
+    header.primary nav li{
+        margin-bottom:10px;
+    }
 }
