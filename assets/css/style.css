@@ -1,0 +1,81 @@
+/*
+yellow #F2AE2E (242, 174, 46)
+sand #faedc3 (250, 237, 195) 
+orange #BF4124 (191, 65, 36)
+medium brown #8C3A27 (140, 58, 39)
+dark brown #400601 (64, 6, 1)
+*/
+
+body{
+    background-color:#faedc3;
+    font-family: 'Gelasio', sans-serif;
+    color:#400601;
+    margin:0;
+}
+
+header.primary{
+    font-family:'Rowdies';
+    background-color:#8C3A27;
+    color:#F2AE2E;
+    text-align: center;
+    padding: 14px 40px 14px 40px; 
+}
+
+header.primary h1{
+    font-size:3rem;
+}
+
+header.primary a{
+    text-decoration:none;
+    color:#F2AE2E
+}
+
+header.primary nav{
+    max-width:960px;
+    margin:auto;
+}
+
+header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:0;
+}
+
+header.primary nav ul li{
+    list-style-type:none; 
+}
+
+header.primary nav a{
+    color:#400601;
+    background-color:#faedc3;
+    text-decoration:none;
+    font-size: 1.2rem;
+    padding:8px 16px;
+    border-radius:8px;
+    transition:0.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active{
+    color:#faedc3;
+    background-color:#400601;
+}
+
+.container{
+    padding:14px;
+    border-bottom: solid 2px #F2AE2E;
+}
+
+.container h2{
+    color:#8C3A27;
+    padding-bottom: 12px;
+    border-bottom:solid 2px #F2AE2E;
+}
+
+.container .post{
+    padding-bottom:24px;
+}
+
+
+
