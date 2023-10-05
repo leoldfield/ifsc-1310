@@ -4,7 +4,7 @@
 #444E7F (68, 78, 127) steel blue
 #8C98E2 (140, 152, 226) pale blue
 #E8EFFF (232, 239, 255) ice blue
-#7B212B (123, 33, 43) maroon
+#9c1f2d (156, 31, 45) maroon
 */
 
 /* --------Box Sizing-------- */
@@ -102,7 +102,7 @@ header.primary nav a{
 
 header.primary nav a:hover,
 header.primary nav a:active{
-    background-color:#7B212B;
+    background-color:#9c1f2d;
     color:#E8EFFF;
 }
 
@@ -122,6 +122,8 @@ padding-bottom:14px;
     flex-direction:row;
     justify-content:space-between;
     gap:20px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #444E7F;
 }
 
 #content article.post{
@@ -137,6 +139,82 @@ padding-bottom:14px;
 article.post figure{
     margin:0;
 }
+
+time.post-date{
+    text-transform:uppercase;
+    color:#9c1f2d;
+    font-size:0.7rem;
+}
+
+article.post img{
+    padding: 3px;
+    border:solid 2px #8C98E2;
+    border-radius:3px;
+}
+
+article.post a{
+    color:#8C98E2;
+}
+
+article.post a:hover{
+    text-decoration:none;
+    
+}
+
+aside[role="complementary"]{
+    background-color:#444E7F;
+    padding:20px;
+}
+
+aside[role="complementary"] a{
+    color:#15152D;
+}
+
+aside[role="complementary"] a:hover{
+    color:#9c1f2d;
+    transition:0.5s;
+}
+
+aside[role="complementary"] a:last-of-type{
+    display: block;
+    text-align:right;
+}
+
+/*the space implies a container inside aside vs aside with the attribute container*/
+aside div.container{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+
+aside .container p{
+    line-height:1.5;
+}
+
+aside .container .widget footer{
+    display:none;
+}
+
+#colophon{
+    background:#15152D;
+}
+
+#colophon h6{
+    margin:0px;
+    padding:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -155,5 +233,17 @@ article.post figure{
 
     header.primary nav li{
         margin-bottom:10px;
+    }
+
+    #content{
+        flex-direction:column;
+    }
+
+    #content img{
+        margin:auto;
+    }
+    
+    aside div.container {
+        flex-direction:column;
     }
 }
