@@ -1,0 +1,19 @@
+.img-center{
+    border:2px solid white;
+    margin:auto;
+    max-width:90%;
+    display:block;
+}
+
+body{
+    background-color:darkolivegreen;
+}
+
+h1{
+    font-size:2rem;
+    font-weight:bold;
+    margin:20px;
+    padding:20px;
+    color:darkolivegreen;
+    background-color:mintcream;
+}
