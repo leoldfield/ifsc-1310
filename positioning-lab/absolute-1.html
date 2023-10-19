@@ -30,35 +30,30 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-#red {
-	background-color: #900;
+
+.box{
 	width:150px;
 	height:150px;
 	position:absolute;
+}
+
+#red {
+	background-color: #900;
 	top:0;
 	left:0;
 }
 #green {
 	background-color: #090;
-	width:150px;
-	height:150px;
-	position:absolute;
 	top:0;
 	right:0;
 }
 #blue {
 	background-color: #00F;
-	width:150px;
-	height:150px;
-	position:absolute;
 	bottom:0;
 	left:0;
 }
 #purple {
 	background-color: #63C;
-	width:150px;
-	height:150px;
-	position:absolute;
 	bottom:0;
 	right:0;
 }
@@ -80,10 +75,10 @@ h1 {
 <body>
 <h1>Exercise 1</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="red" class="box">Red</div>
+  <div id="green" class="box">Green</div>
+  <div id="blue" class="box">Blue</div>
+  <div id="purple" class="box">Purple</div>
   <div id="footer">Footer</div>
 </div>
 </body>
