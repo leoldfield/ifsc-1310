@@ -41,7 +41,6 @@ header.primary a{
 
 header.primary nav{
     max-width:960px;
-    min-width:800px;
     margin:auto;
 }
 
@@ -91,12 +90,13 @@ header.primary nav a:active{
 
 
 /* --------Media Query-------- */ 
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
     header.primary nav ul{
+        flex-wrap:nowrap;
+        row-gap:0px;
         flex-direction:column;
         max-width:250px;
-        row-gap:0px;
-        margin:auto;
+        margin:inherit;
     }
 
     header.primary nav ul a{
