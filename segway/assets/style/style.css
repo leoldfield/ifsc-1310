@@ -1,0 +1,74 @@
+/*CSS Demo Project*/
+/*
+#F5F0EA (245, 240, 234) offwhite
+#EBDBCB (235, 219, 203) pale
+#D6AED3 (214, 174, 211) lavender
+#1E1F3B (30, 31, 59) blue
+#0A0712 (10, 7, 18) navy
+*/
+
+/* --------Box Sizing-------- */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+
+/* --------Utility Styles--------*/
+
+.container{ 
+    width:80vw;
+    margin:40px auto;
+}
+
+.img-right{
+    float:right;
+    margin: 10px 0 10px 20px;
+    border:4px double #D6AED3;
+    padding:5px;
+    box-shadow:4px 4px 2px rgba(214, 174, 211, 0.1);
+}
+
+.img-left{
+    float:left;
+    margin: 10px 20px 10px 0;
+    border:4px double #D6AED3;
+    padding:5px;
+    box-shadow:4px 4px 2px rgba(214, 174, 211, 0.1);
+}
+
+.img-center{
+    border:4px double #D6AED3;
+    padding:5px;
+    box-shadow:4px 4px 2px rgba(214, 174, 211, 0.1);
+    display:block;
+    margin:20px auto;
+}
+
+img{
+    max-width:100%;
+}
+
+/* --------Global Styles-------- */
+
+body{
+    background-color:#0A0712;
+    font-family:'Cabin', serif;
+    color:#F5F0EA;
+    margin:0;
+}
+
+
+
+
+
+
+
+/* --------Media Query-------- */ 
+@media screen and (max-width:600px){
+    
+}
