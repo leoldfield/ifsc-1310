@@ -1,18 +1,8 @@
 /*CSS Demo Project*/
 /*
-#332433 (51, 36, 51) purple
-#847996 (132, 121, 150) periwinkle
-#88b7b5 (136, 183, 181) blue
-#a7cab1 (167, 202, 177) spruce
-#ccf0d7 (204, 240, 215) pale green
-
-
-
-#F5F0EA (245, 240, 234) offwhite
-#EBDBCB (235, 219, 203) pale
-#D6AED3 (214, 174, 211) lavender
-#1E1F3B (30, 31, 59) blue
-#0A0712 (10, 7, 18) navy
+#2f6e1f (47, 110, 31) green
+#f2f2f2 (242, 242, 242) white
+##181c1f (24, 28, 31) dark grey
 */
 
 /* --------Box Sizing-------- */
@@ -56,13 +46,13 @@ header.primary{
   text-align: center;
   color: #F2F2F2;
   text-shadow: 2px 2px #181c1f;
-  padding: 6em 2em;
+  padding: 0 2em 6em 2em;
   position: relative;
 }
 
 header.primary::before{
   content:"";
-  background-image:url("/segway/assets/img/header_segway.jpg");
+  background-image:url("../img/header_segway.jpg");
   background-size:cover;
   position:absolute;
   top: -500px;
@@ -78,7 +68,7 @@ header.primary h1{
 }
 
 header.primary h1 a {
-  background-image: url("/segway/assets/img/segway_logo_white.png");
+  background-image: url("../img/segway_logo_white.png");
   display: block;
   width:600px;
   height:342px;
@@ -111,7 +101,7 @@ header.primary nav a:visited {
   color: white;
   text-decoration: none;
   background-color: #000000;
-  background-color: rgba(142, 166, 184, 0.4);
+  background-color: rgba(242, 242, 242, 0.4);
   padding: 8px 16px;
   border-radius: 10px;
   transition: 0.6s;
@@ -119,7 +109,7 @@ header.primary nav a:visited {
 }
 header.primary nav a:hover,
 header.primary nav a:active {
-  background-color: rgba(51, 83, 107, 0.8);
+  background-color: rgba(47, 110, 31, 0.4);
 }
 
 
@@ -151,6 +141,7 @@ header.primary nav a:active {
 
 .block-post{
   color:#181c1f;
+  font-size:1.2rem;
   padding:0px;
   margin:0px;
 }
