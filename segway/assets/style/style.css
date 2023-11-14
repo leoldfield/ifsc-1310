@@ -2,7 +2,8 @@
 /*
 #2f6e1f (47, 110, 31) green
 #f2f2f2 (242, 242, 242) white
-##181c1f (24, 28, 31) dark grey
+#181c1f (24, 28, 31) dark grey
+#C3C3C3 (195, 195, 195) light grey
 */
 
 /* --------Box Sizing-------- */
@@ -113,9 +114,6 @@ header.primary nav a:active {
 }
 
 
-
-
-
 #content #about{
   padding-top:40px;
   padding-bottom:40px;
@@ -188,6 +186,8 @@ article.post{
   border-radius: 30px;
 }
 
+
+
 article.post figure{
   display:block;
   margin-left:auto;
@@ -227,6 +227,20 @@ article.post div.article-text ul strong{
   font-size:1.2rem;
   padding-top:20px;
   color:#2f6e1f;
+}
+
+#contact-content{
+  display:flex;
+  justify-content:center;
+  align-content:center;
+}
+
+section #contact{
+  padding: 20px;
+  margin-top:40px;
+  background-color:#2f6e1f;
+  border-radius:30px;
+  width:60vw;
 }
 
 
