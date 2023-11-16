@@ -35,7 +35,7 @@ html {
 /* --------Global Styles-------- */
 
 body{
-  background-color:#181c1f;
+  background-color: #181c1f;
   font-family:'Cabin', serif;
   color:#F2F2F2;
 }
@@ -114,10 +114,10 @@ header.primary nav a:active {
 }
 
 
-#content #about{
+.about{
   padding-top:40px;
   padding-bottom:40px;
-  background-color: #F2F2F2;
+  background-color:#F2F2F2;
 }
 
 .content-block{
@@ -174,8 +174,6 @@ section.container figure img{
 }
 
 
-
-
 article.post{
   margin-bottom:40px;
   max-width:40vw;
@@ -186,6 +184,9 @@ article.post{
   border-radius: 30px;
 }
 
+article.team-post{
+  max-width:20vw;
+}
 
 
 article.post figure{
@@ -211,6 +212,15 @@ div.article-text h3{
 }
 
 
+article.post div.article-text h3 em{
+  display:block;
+  padding-top:14px;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #C3C3C3;
+}
+
+
 article.post div.article-text{
   border-radius:30px;
   margin-top:20px;
@@ -228,6 +238,14 @@ article.post div.article-text ul strong{
   padding-top:20px;
   color:#2f6e1f;
 }
+
+
+article.post div.article-text blockquote cite{
+  display:block;
+  padding-top:20px;
+  font-style:italic;
+}
+
 
 #contact-content{
   display:flex;
@@ -247,8 +265,18 @@ section #contact{
 
 
 /* --------Media Query-------- */ 
-@media screen and (max-width:600px){
-  header.primary h1{
-    background-color: red;
+@media screen and (max-width:800px){
+  header.primary nav ul{
+    flex-direction:column;
+    max-width:200px;
+    margin:auto;
   }
+  
+  header.primary nav ul a{
+    display:block;
+  }
+  header.primary nav li{
+    margin-bottom: 12px;
+  }
+
 }
