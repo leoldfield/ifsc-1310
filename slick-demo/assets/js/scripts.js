@@ -3,11 +3,11 @@ $(document).ready(function() {
     $('.fade').slick({
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 800,
       fade: true,
       slide: 'div',
       cssEase: 'linear',
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000
     });
 
