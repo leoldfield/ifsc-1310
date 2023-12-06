@@ -113,12 +113,6 @@ header.index-header h1 a {
   overflow: hidden;
 }
 
-
-
-
-
-
-
 header.primary nav ul {
   position: relative;
   display: flex;
@@ -304,6 +298,15 @@ section #contact{
 
 
 /* --------Media Query-------- */ 
+
+@media screen and (max-width:1300px){
+  article.team-post{
+    min-width:40vw;
+  }
+}
+
+
+
 @media screen and (max-width:600px){
 
   header.primary h1 a {
@@ -393,3 +396,5 @@ section #contact{
 
 
 }
+
+
