@@ -38,6 +38,7 @@ body{
   background-color: #181c1f;
   font-family:'Cabin', serif;
   color:#F2F2F2;
+  line-height: 150%;
 }
 
 
@@ -145,13 +146,13 @@ header.primary nav a:active {
 }
 
 
-section.container figure {
+.content-block figure {
   line-height:0px;
   margin:20px;
   max-width:30vw;
 }
 
-section.container figure img{
+.content-block figure img{
   max-width:30vw; 
   padding:10px;
   border:10px solid #181c1f;
@@ -295,11 +296,62 @@ section #contact{
   }
 
   .block-content{
-    background-color:blue;
     order:2;
-  } /*added class block content*/
+  } 
+  
   .content-block figure{
+    justify-content: center;
+    min-width:50vw;
+  }
+
+  .content-block figure img{
+    min-width:50vw;
+  }
+
+  
+  .content-articles{
+    display:block;
+  }
+
+  article.post{
+    margin-bottom:40px;
+    max-width:100vw;
+    padding:10px;
+    background-color: #F2F2F2;
+    color:#181c1f;
+    border:4px solid #181c1f;
+    border-radius: 30px;
+  }
+  
+  article.post figure{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  article.post figure{
+    justify-content: center;
+    min-width:50vw;
+  }
+
+  article.post figure img{
+    min-width:50vw;
+  }
+
+
+  #faq2-content{
     order:1;
   }
+
+  #about2-content{
+    order:1;
+  }
+
+
+.content-articles .team-post{
+    min-width:90vw;
+    text-align:center;
+  }
+
 
 }
